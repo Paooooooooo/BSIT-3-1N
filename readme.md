@@ -24,7 +24,7 @@ Follow these steps to navigate through the application:
 4. **Submit Data:**
    - Click **Submit** to store your data in the database.
 
-   ![Step 4 Image](SS3.png)
+   ![Step 4 Image](SS7.png)
 
 5. **Log Out:**
    - Return to the Homepage by clicking **Log Out**.
