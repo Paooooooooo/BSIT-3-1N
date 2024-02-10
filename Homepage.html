@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PUP RE-ADMISSION</title>
+        <link rel="stylesheet" href="homepage.css"> 
+    </head>
+    <body>
+        <nav>
+            <div class="logo">
+                <a href="http://www.pup.edu.ph" target="_blank"><img src="file:///C:/Users/ASUS/Downloads/logo200.png">
+                <div class="logo-text">
+                    <span>Polytechnic University of the Philippines</span>
+                    </a>
+                </div>
+                <div class="subtitle">
+                    <span>The Country's 1st PolytechnicU</span>
+                </div>
+            </div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+            <button class ="btn">SIGN IN</button>
+        </nav>
+        <div class="under-nav"></div>
+        <header>
+            <h1><span>PUP RE-ADMISSION CENTER</span></h1>
+        </header>
+        <main>
+        <section id = intro class="reveal">
+            <p>
+                Our Readmission Center is designed to assist former students like you in seamlessly returning to Polytechnic University of the Philippines.
+                Whether you took a leave of absence for personal reasons, explored other opportunities, or faced challenges that
+                required time away, we are committed to helping you resume your education.
+            </p>
+        </section>
+        <section id="why-choose" class = "reveal">
+                <ul>
+                    <li><strong>Personalized Support</strong> Our dedicated team is here to provide individualized assistance throughout
+                        the readmission process. From understanding requirements to addressing concerns, we're with you every step of
+                        the way.</li>
+                    <li><strong>Flexible Options</strong> We recognize that circumstances vary, and we offer flexible readmission options
+                        to accommodate your unique situation. Whether you're seeking full-time enrollment or a part-time return, we
+                        strive to make the transition as smooth as possible.</li>
+                    <li><strong>Academic Excellence</strong> PUP is renowned for its commitment to academic excellence. By
+                        choosing to return, you'll have the opportunity to continue your education within a supportive and
+                        intellectually stimulating environment.</li>
+                </ul>
+        </section>
+
+        <section id="getting-started" class = "reveal">
+            <header>
+            <h1><span>GETTING STARTED</span></h1>
+            </header>
+            <p>
+                Navigating the readmission process is simple with our user-friendly online platform. Begin by exploring the resources
+                provided on this website to understand the requirements and steps involved. Access the readmission form, submission
+                guidelines, and helpful tips to ensure a successful return to PUP.
+            </p>
+        </section>
+
+        <section id="gs-list" class = "reveal">
+            <ul>
+                <li>
+                    <div class="gs-item reveal">
+                        <strong>Readmission Form</strong>
+                        <p>Access and download the PUP Re-Admission Form.</p>
+                        <button class="explore-btn" onclick="exploreReadmissionForm()">Explore</button>
+                    </div>
+                </li>
+                <li>
+                    <div class="gs-item reveal">
+                        <strong>Guidelines</strong>
+                        <p>Ensure that all required fields are completed</p>
+                        <button class="explore-btn">Explore</button>
+                    </div>
+                </li>
+                <li>
+                    <div class="gs-item reveal">
+                        <strong>Helpful Tips</strong>
+                        <p>Outline the necessary reasons for re-admission</p>
+                        <button class="explore-btn">Explore</button>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <hr class = "reveal">
+        <section id="login" class = "reveal">
+            <div class = "login-logo" reveal>
+                <img src="file:///C:/Users/ASUS/Downloads/logo200.png">
+            </div>
+            <h4>PUP Online Re-Admission</h4>
+            <h5>SIGN IN TO START</h5>
+            
+            <form action="#" method="post" id="login-form">
+                <label for="username">Student-Number:</label>
+                <input type="text" id="username" name="username" required>
+    
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+    
+                <button type="button" class="login_btn" onclick="redirectToAnotherPage()">LOGIN</button>
+
+                <script>
+                    function redirectToAnotherPage() {
+                        // Navigate to the desired HTML file
+                        window.location.href = 'file:///C:/Users/ASUS/Desktop/Web Dev Files/readwebapp.html';
+                    }
+                </script>
+
+            </form>
+        </section>
+
+        <section id="contact-us" class = "reveal">
+            <h2>CONTACT US</h2>
+                <p>
+                    Have questions or need assistance? 
+                </p>
+                <div class="contact-info reveal">
+                    <h3>Contact Details:</h3>
+                        <a href="tel:+639770327738">Phone:  <b class="contact-info-label">(+63) 977 - 032 -7738</b></a>
+                        <a href="mailto:sampleread@gmail.com">Email:  <b class="contact-info-label">sampleread@gmail.com</b></a>
+                </div>
+                <!-- Follow Us -->
+                <div class="follow-us">
+                    <h3>Follow Us:</h3>
+                    <div class="social-icons reveal">
+                        <a href="https://www.facebook.com/ThePUPOfficial" target="_blank"><img src="file:///C:\Users\ASUS\Downloads/fb-r-icon.png" alt="Facebook Page"></a>
+                        <a href="https://www.youtube.com/user/pupcreatv" target="_blank"><img src="file:///C:\Users\ASUS\Downloads/yt-r-icon.png" alt="YouTube Channel"></a>
+                        <a href="https://twitter.com/ThePUPOfficial?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank" class="x-logo"><img src="file:///C:\Users\ASUS\Downloads/twitter-r-icon.png" alt="X Logo"></a>
+                    </div>
+                </div>
+        </section>
+    </main>
+    <script src="readscript.js"></script>
+    </body>
+</html>
+
+
