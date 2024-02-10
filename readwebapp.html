@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PUP Re-Admission Form</title>
+    <link rel="stylesheet" href="readwebapp.css"> 
+  </head>
+  <nav>
+    <div class="logo">
+      <a href="#" target="_blank">
+        <img src="logo200.png">
+      </a>
+      <div class="logo-text">
+        <span>Polytechnic University of the Philippines</span>
+      </div>
+    </div>
+    <div class="subtitle">
+      <span>PUP READMISSION FORM</span>
+    </div>
+    <button class="btn" onclick="redirectToLogoutPage()">Log Out</button>
+  </nav>
+  <body>
+    <!--<h1>Header</h1>
+    <h2><font size="4"><i>Kindly Fill Up the Following Form:</i></font></h2>-->
+    <form name="admissionForm" action="https://script.google.com/macros/s/AKfycbztMrcf-UElHuQY-eZmSrPfs22K2v2cvMZdvrTRf6jwulC8mCu8WzTpG3BBHFtd0Diw/exec" method="post">
+      <section id="personalSection">
+        <div class = "form-title"><b>Personal Background:</b></div>
+        <div class = "line"></div>
+
+        <div class="container">
+              <br>
+              <!-- Personal Background Fields -->
+              <div class="wrapper">
+              <div class="form-field"> 
+                <input type="text" name="NAME" required>
+                <label>Name:</label>
+                <div class="underline"></div>
+              </div>
+            </div>
+            <div class="wrapper">
+              <div class="form-field">
+                <input type ="text" name="ADDRESS" required>
+                <label>Address:</label>
+                <div class="underline"></div>
+              </div>
+            </div>
+                <label>Sex:</label>
+                <!-- Include radio inputs and labels in a div or use fieldset for radio groups -->
+                <div class="form-radio-group">
+                  <label for="maleRadio">
+                    <input type="radio" name="SEX" value="m" id="maleRadio" required>
+                  Male
+                  <span></span>
+                  </label>
+                  <label for="femaleRadio">
+                  <input type="radio" name="SEX" value="f" id="femaleRadio" required>
+                  Female
+                  <span></span>
+                  </label>
+                </div>
+                <div class="wrapper">
+              <div class="form-field">
+                <input type ="number" name="AGE" required>
+                <div class="underline"></div>
+                <label>Age:</label>
+              </div>
+              </div>
+                <label>Civil Status:</label>
+                <!-- Include radio inputs and labels in a div or use fieldset for radio groups -->
+                <div class="form-radio-group">
+                  <label for="singleRadio">
+                  <input type="radio" name="CIV_STAT" value="Single" id="singleRadio" required>
+                  Single
+                  <span></span>
+                  </label>
+                  <label for="marriedRadio">
+                  <input type="radio" name="CIV_STAT" value="Married" id="marriedRadio" required>
+                  Married
+                  <span></span>
+                  </label>
+                  <label for="widowedRadio">
+                  <input type="radio" name="CIV_STAT" value="Widowed" id="widowedRadio" required>
+                  Widowed
+                  <span></span>
+                  </label>
+                  <label for="separatedRadio">
+                  <input type="radio" name="CIV_STAT" value="Legally Separated" id="separatedRadio" required>
+                  Legally Separated
+                  <span></span>
+                  </label>
+                </div>
+                <div class="wrapper">
+                  <div class="form-field"> 
+                      <input type="text" name="HS_GRAD" required>
+                      <label>High School Graduated From:</label>
+                      <div class="underline"></div>
+                  </div>
+              </div>
+              
+              <div class="wrapper">
+                <div class="form-field">
+                    <input type="text" name="HS_LOC" required>
+                    <label>Location of High School:</label>
+                    <div class="underline"></div>
+                </div>
+            </div>
+            
+            <div class="wrapper">
+              <div class="form-field"> 
+                  <input type="number" name="HS_AVE" required>
+                  <label>Highschool Grade Point Average (GPA):</label>
+                  <div class="underline"></div>
+              </div>
+          </div>
+          
+          <div class="wrapper">
+            <div class="form-field"> 
+                <input type="number" name="YR_DROP" min="1900" max="9999" required>
+                <label>Year Dropped in PUP:</label>
+                <div class="underline"></div>
+            </div>
+        </div>
+
+
+        <div class="wrapper">
+          <div class="form-field"> 
+              <input type="number" name="YR_ADMITTED" min="1900" max="9999" required>
+              <label>Year Admitted in PUP:</label>
+              <div class="underline"></div>
+          </div>
+      </div>
+    
+              <label>Guardian:</label>
+              <div class="form-radio-group">
+                <label for="fatherRadio">
+                  <input type="radio" name="GUARDIAN" value="father" id="fatherRadio" required>
+                  Father
+                  <span></span>
+                </label>
+                
+                <label for="motherRadio">
+                  <input type="radio" name="GUARDIAN" value="mother" id="motherRadio" required>
+                  Mother
+                  <span></span>
+                </label>
+                
+                <label for="otherRadio">
+                  <input type="radio" name="GUARDIAN" value="other" id="otherRadio" required>
+                  Other
+                  <span></span>
+                </label>
+              </div>
+
+        <div class="wrapper">
+    <div class="form-field"> 
+        <input type="text" name="AD_STAT" required>
+        <label>Admission Status:</label>
+        <div class="underline"></div>
+          </div>
+          </div>
+
+
+
+          <div class="wrapper">
+            <div class="form-field">
+                <input type="number" name="RATING" required>
+                <label>PUPCET Rating:</label>
+                <div class="underline"></div>
+            </div>
+        </div>
+        
+
+
+              <label>Readmission Semester:</label>
+              <div class="form-radio-group">
+                <label for="firstSemester">
+                  <input type="radio" name="READ_SEM" value="1st" id="firstSemester" required>
+                  1st Semester
+                  <span></span>
+                </label>
+            
+                <label for="secondSemester">
+                  <input type="radio" name="READ_SEM" value="2nd" id="secondSemester" required>
+                  2nd Semester
+                  <span></span>
+                </label>
+              </div>   
+
+              <div class="wrapper">
+                <div class="form-field"> 
+                    <input type="text" name="READ_AY" required>
+                    <label>Readmission A.Y.:</label>
+                    <div class="underline"></div>
+                </div>
+            </div>
+            
+
+
+              <label>Is this the First Time you Applied for Readmission:</label>
+              <div class="form-radio-group">
+                <label for="yesReadmission">
+                  <input type="radio" name="READ_APPLY" value="Yes" id="yesReadmission" required>
+                  Yes
+                  <span></span>
+                </label>
+            
+                <label for="noReadmission">
+                  <input type="radio" name="READ_APPLY" value="No" id="noReadmission" required>
+                  No
+                  <span></span>
+                </label>
+              </div>
+            
+            <!-- Add other personal background fields in similar div structure -->
+            <br>
+        </div>
+        <div class="page-indicators">
+          <div class="page-indicator active-page" onclick="showPersonalSection()"></div>
+          <div class="page-indicator" onclick="showAcademicSection()"></div>
+      </div>
+      <button type="button" class="academic-button" onclick="showAcademicSection()">Academic Background >></button>
+      </section>
+
+      <section id="academicSection" style="display:none;">
+        <div class = "form-title"><b>Academic Background:</b></div>
+        <div class = "line"></div>
+          <div class="container">
+            <br>
+            <!-- Academic Background Fields -->
+
+                <div class="wrapper">
+                <div class="form-field"> 
+                    <input type="text" name="COURSE" required>
+                    <label>Course:</label>
+                    <div class="underline"></div>
+                </div>
+            </div>
+            <div class="wrapper">
+              <div class="form-field"> 
+                  <input type="number" name="YR_LEVEL" required>
+                  <label>Year Level:</label>
+                  <div class="underline"></div>
+              </div>
+            </div>
+
+            <div class="wrapper">
+              <div class="form-field"> 
+                  <input type="number" name="TOT_UNITS" required>
+                  <label>Total Units:</label>
+                  <div class="underline"></div>
+              </div>
+            </div>
+
+            <label>Reason for Deciding a Career:</label>
+            <div class="form-radio-group">        
+            
+              <label for="economic">
+                <input type="radio" name="CAREER_REASON" value="economic" id="economic" required>
+                Economic
+                <span></span>
+              </label>
+            
+              <label for="employment_opportunity">
+                <input type="radio" name="CAREER_REASON" value="Employment Opportunity" id="employment_opportunity" required>
+                Employment Opportunity
+                <span></span>
+              </label>
+            
+              <label for="personal_interest">
+                <input type="radio" name="CAREER_REASON" value="Personal Interest" id="personal_interest" required>
+                Personal Interest
+                <span></span>
+              </label>
+            
+              <label for="parental_choice">
+                <input type="radio" name="CAREER_REASON" value="Parental Choice" id="parental_choice" required>
+                Parental Choice
+                <span></span>
+              </label>
+            </div>
+            <br>
+            <label>Student Type:</label>
+            <div class="form-radio-group">
+              <label for="full-time">
+                <input type="radio" name="STUD_TYPE" value="Full-Time" id="full-time" required>
+                Full-Time
+                <span></span>
+              </label>
+            
+              <label for="working">
+                <input type="radio" name="STUD_TYPE" value="Working" id="working" required>
+                Working
+                <span></span>
+              </label>
+            </div>
+            
+            <div class="wrapper">
+              <div class="form-field">
+                  <input type="text" name="INIT_PURPOSE" required>
+                  <label>Initial Purpose in Enrolling to PUP:</label>
+                  <div class="underline"></div>
+              </div>
+          </div>
+          
+
+          <div class="wrapper">
+            <div class="form-field">
+                <input type="text" name="AWAY_SCHOOL" required>
+                <label>How Long have You Been Away from School:</label>
+                <div class="underline"></div>
+            </div>
+        </div>
+        
+
+        <div class="wrapper">
+        <div class="form-field">
+          <input type="text" name="DROP_REASON" required>
+          <label>Dropping Reason/s:</label>
+          <div class="underline"></div>
+        </div>
+      </div>
+
+            <label>SRGPA (Self-Reported Grade Point Average):</label>
+            <div class="form-radio-group">
+              
+            
+              <label for="gpa-1.0">
+                <input type="radio" name="SRGPA" value="1.0" id="gpa-1.0" required>
+                1.0
+                <span></span>
+              </label>
+            
+              <label for="gpa-1.25">
+                <input type="radio" name="SRGPA" value="1.25" id="gpa-1.25" required>
+                1.25
+                <span></span>
+              </label>
+            
+              <label for="gpa-1.5">
+                <input type="radio" name="SRGPA" value="1.5" id="gpa-1.5" required>
+                1.5
+                <span></span>
+              </label>
+            
+              <label for="gpa-2.0">
+                <input type="radio" name="SRGPA" value="2.0" id="gpa-2.0" required>
+                2.0
+                <span></span>
+              </label>
+            
+              <label for="gpa-2.25">
+                <input type="radio" name="SRGPA" value="2.25" id="gpa-2.25" required>
+                2.25
+                <span></span>
+              </label>
+            
+              <label for="gpa-2.5">
+                <input type="radio" name="SRGPA" value="2.5" id="gpa-2.5" required>
+                2.5
+                <span></span>
+              </label>
+            
+              <label for="gpa-2.75">
+                <input type="radio" name="SRGPA" value="2.75" id="gpa-2.75" required>
+                2.75
+                <span></span>
+              </label>
+            
+              <label for="gpa-3.0">
+                <input type="radio" name="SRGPA" value="3.0" id="gpa-3.0" required>
+                3.0
+                <span></span>
+              </label>
+            </div>
+
+            <div class="wrapper">
+            <div class="form-field">
+              <input type="text" name="PROB_PUP" required>
+              <label>Problems Encountered in PUP:</label>
+              <div class="underline"></div>
+            </div>
+          </div>
+
+            <label>Weekly Hours of Study:</label>
+            <div class="form-radio-group">
+              
+            
+              <label for="study-none">
+                <input type="radio" name="STUDY_HRS" value="None" id="study-none" required>
+                None
+                <span></span>
+              </label>
+            
+              <label for="study-1-5">
+                <input type="radio" name="STUDY_HRS" value="1-5 hours" id="study-1-5" required>
+                1-5 hours
+                <span></span>
+              </label>
+            
+              <label for="study-6-10">
+                <input type="radio" name="STUDY_HRS" value="6-10 hours" id="study-6-10" required>
+                6-10 hours
+                <span></span>
+              </label>
+            
+              <label for="study-more-than-10">
+                <input type="radio" name="STUDY_HRS" value="more than 10 hours" id="study-more-than-10" required>
+                More than 10 hours
+                <span></span>
+              </label>
+            </div>
+            <br>
+            <label>Relationship Description of the FF:</label>
+            <div class="form-radio-group">
+              <br>
+              Faculty: 
+              <label for="fac-favorable">
+                <input type="radio" name="FAC_REL" value="Favorable" id="fac-favorable" required>
+                Favorable
+                <span></span>
+              </label>
+            
+              <label for="fac-not-favorable">
+                <input type="radio" name="FAC_REL" value="Not Favorable" id="fac-not-favorable" required>
+                Not Favorable
+                <span></span>
+              </label>
+              <br>
+              Classmates: 
+              <label for="class-favorable">
+                <input type="radio" name="CLASS_REL" value="Favorable" id="class-favorable" required>
+                Favorable
+                <span></span>
+              </label>
+            
+              <label for="class-not-favorable">
+                <input type="radio" name="CLASS_REL" value="Not Favorable" id="class-not-favorable" required>
+                Not Favorable
+                <span></span>
+              </label>
+            </div>
+            <br>
+            <label>Reason/s for Re-Admission:</label>
+            <div class="form-radio-group">
+              
+            
+              <label for="read-for-promotion">
+                <input type="radio" name="READ_REASON" value="For Promotion" id="read-for-promotion" required>
+                For Promotion
+                <span></span>
+              </label>
+            
+              <label for="read-for-prestige">
+                <input type="radio" name="READ_REASON" value="For Prestige" id="read-for-prestige" required>
+                For Prestige
+                <span></span>
+              </label>
+            
+              <label for="read-to-finish-degree">
+                <input type="radio" name="READ_REASON" value="To Finish and Obtain A Degree" id="read-to-finish-degree" required>
+                To Finish and Obtain a Degree
+                <span></span>
+              </label>
+            
+              <label for="read-to-have-permanent-job">
+                <input type="radio" name="READ_REASON" value="To have a Permanent Job" id="read-to-have-permanent-job" required>
+                To Have a Permanent Job
+                <span></span>
+              </label>
+            </div>
+            
+            <div class="wrapper">
+            <div class="form-field">
+              <input type="text" name="RETURN_INTENTION" required>
+              <label>Return Intention:</label>
+              <div class="underline"></div>
+          </div>
+        </div>
+          
+            
+            <!-- Add other academic background fields in similar div structure -->
+            <br>
+            
+        </div>
+        <div class="page-indicators">
+          <div class="page-indicator" onclick="showPersonalSection()"></div>
+          <div class="page-indicator active-page"></div>
+      </div>
+      <button type="button" class="personal-button" onclick="showPersonalSection()">&lt;&lt; Personal Background</button>
+        <input type="submit" value="Submit">
+      </section>
+    </form>
+
+    <script>
+      function showAcademicSection() {
+
+        if (!validatePersonalSection()) {
+          alert("Please fill in all required fields in the Personal Background section.");
+          return;
+        }
+        document.getElementById('personalSection').style.display = 'none';
+        document.getElementById('academicSection').style.display = 'block';
+        scrollToTop();
+      }
+      
+        function validatePersonalSection() {
+        // Add or remove fields as needed
+        var requiredFields = ["NAME", "ADDRESS", "SEX", "AGE", "CIV_STAT", "HS_GRAD", "HS_LOC", "HS_AVE", "YR_DROP", "YR_ADMITTED", "GUARDIAN", "AD_STAT", "RATING", "READ_SEM", "READ_AY", "READ_APPLY"];
+        
+        for (var i = 0; i < requiredFields.length; i++) {
+          var field = requiredFields[i];
+          var value = document.forms["admissionForm"][field].value.trim();
+
+          if (value === "") {
+            return false;
+          }
+        }
+
+        return true;
+      }
+
+      function showPersonalSection() {
+        document.getElementById('academicSection').style.display = 'none';
+        document.getElementById('personalSection').style.display = 'block';
+        scrollToTop();
+      }
+
+      function redirectToLogoutPage() {
+            window.location.href = 'index.html';
+        }
+
+      function scrollToTop() {
+        // Smoothly scroll to the top of the form
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+      }
+
+    </script>
+  </body>
+</html>
