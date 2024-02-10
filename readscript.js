@@ -1,6 +1,6 @@
 function exploreReadmissionForm() {
     // Replace 'path/to/readmission-form.pdf' with the actual path to your PDF file
-    var pdfPath = 'file:///C:/Users/ASUS/Downloads/PUP-Application-for-Re-admission.pdf';
+    var pdfPath = 'PUP-Application-for-Re-admission.pdf';
 
     // Open the PDF file in a new browser window or tab
     window.open(pdfPath, '_blank');
