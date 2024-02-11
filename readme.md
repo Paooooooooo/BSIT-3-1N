@@ -19,7 +19,7 @@ Follow these steps to navigate through the application:
 3. **Input Data:**
    - Fill in the required fields on the readmission webpage.
 
-   ![Step 3 Image](SS2.PNG)
+   ![Step 3 Image](SS1.PNG)
 
 4. **Submit Data:**
    - Click **Submit** to store your data in the database.
